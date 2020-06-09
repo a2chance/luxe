@@ -1,0 +1,72 @@
+.services 
+	padding: 61px 0 102px
+	background: #1c242a
+
+.services__inner 
+
+.services__row 
+	display: flex
+
+.services__column
+	flex: 0 0 33.333% 
+	text-align: center
+
+.services__img-block 
+	width: 162px
+	height: 161px
+	margin: 0 auto 45px
+	img 
+		max-width: 100%
+
+.services__title 
+	color: #fff
+	font-family: "PF Din Text Cond Pro"
+	font-size: 21px
+	font-weight: 500
+	text-transform: uppercase
+	letter-spacing: 2.1px
+	// text-align: center
+	margin-bottom: 31px
+
+.services__description 
+	color: #bb9c66
+	font-family: "PT Sans"
+	font-size: 15px
+	line-height: 1.8
+	margin-bottom: 35px
+
+.services__link 
+
+.services__link-item 
+	color: #fff
+	font-family: "PF Din Text Cond Pro"
+	font-size: 21px
+	font-weight: 500
+	text-transform: uppercase
+	letter-spacing: 2.12px
+	position: relative
+	display: inline-block
+	transition: all .3s linear
+	&:hover 
+		color: #947e57
+		text-decoration: underline
+	&::before
+		content: ""
+		display: block 
+		background: #947e57
+		width: 50px
+		height: 2px
+		position: absolute
+		left: -65px
+		top: 50%
+		transform: translateY(-50%)
+	&::after
+		content: ""
+		display: block 
+		background: #947e57
+		width: 50px
+		height: 2px
+		position: absolute
+		right: -65px
+		top: 50%
+		transform: translateY(-50%)

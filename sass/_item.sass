@@ -1,0 +1,287 @@
+.items 
+	padding: 50px 0 77px
+	@media (max-width: $md2)
+		padding: 50px 0 30px
+
+.items__inner 
+
+.items__top 
+	display: flex
+	justify-content: center
+	margin-bottom: 100px
+	align-items: center
+
+.items__line 
+	width: 107px
+	height: 2px
+	background: #bb9c66
+	position: relative
+	&::before
+		content: ""
+		display: block 
+		border-top: 1px solid #bb9c66
+		border-right: 1px solid #bb9c66
+		width: 19px
+		height: 19px
+		position: absolute
+	&::after
+		content: ""
+		display: block 
+		border-top: 1px solid #bb9c66
+		border-right: 1px solid #bb9c66
+		width: 19px
+		height: 19px
+		position: absolute
+
+.items__line--first 
+	&::before
+		top: 50%
+		transform: translateY(-50%) rotate(-133deg)
+		left: 3px
+	&::after
+		top: 50%
+		transform: translateY(-50%) rotate(-133deg)
+		left: 10px
+
+.items__circle 
+	width: 100px
+	height: 100px
+	border-radius: 50%
+	border: 2px solid #a17d46
+	// border-image: linear-gradient(to top left, #97703a, #ceb689)
+	// border-image-slice: 1
+	display: flex
+	justify-content: center 
+	align-items: center
+	color: #000
+	font-family: "PF Din Text Cond Pro"
+	font-size: 21px
+	font-weight: 500
+	text-transform: uppercase
+	margin: 0 42px
+	position: relative
+	&::before
+		content: ""
+		display: block 
+		width: 11px
+		height: 11px
+		border-radius: 50%
+		border: 1px solid #a17d46
+		position: absolute
+		top: 50%
+		left: -25px
+		transform: translateY(-50%)
+	&::after
+		content: ""
+		display: block 
+		width: 11px
+		height: 11px
+		border-radius: 50%
+		border: 1px solid #a17d46
+		position: absolute
+		top: 50%
+		right: -25px
+		transform: translateY(-50%)
+
+.items__line--second 
+	&::before
+		top: 50%
+		transform: translateY(-50%) rotate(45deg)
+		right: 3px
+	&::after
+		top: 50%
+		transform: translateY(-50%) rotate(45deg)
+		right: 10px
+
+.items__middle 
+	display: flex
+	margin-bottom: 80px
+	flex-wrap: wrap
+	@media (max-width: $md2)
+		margin-bottom: 30px
+
+.items__unit 
+
+.items__unit--first
+	margin-right: auto
+	@media (max-width: $md3)
+		width: 50%
+
+.items__column	
+	&:hover .items__column-icon
+		transform: translateY(40px)
+
+.items__column 
+	&:hover .items__column-title 
+		transform: translateY(30px)
+
+.items__column
+	&:hover .items__column-inside 
+		background: rgba(0, 0, 0, .7)
+
+.items__column-wrapper
+	text-align: center
+	@media (max-width: $md3)
+		width: 50%
+
+.items__column 
+	width: 250px
+	height: 250px
+	position: relative
+	border-radius: 50%
+	overflow: hidden
+	margin-bottom: 50px
+	@media (max-width: $md2)
+		width: 200px
+		height: 200px
+	@media (max-width: $md3)
+		margin: 0 auto 30px
+		width: 300px
+		height: 300px
+
+.items__column-one 
+
+.items__column-img 
+	>img
+		height: 100%
+		width: 100%
+		object-fit: cover
+		object-position: center
+
+.items__column-inside 
+	position: absolute
+	top: 0
+	left: 0
+	background: rgba(0, 0, 0, 0)
+	width: 100%
+	height: 100%
+	transition: all .3s linear
+	@media (max-width: $md3)
+		background: rgba(0, 0, 0, .6)
+
+
+.items__column-icon 
+	width: 75px
+	height: 75px
+	border-radius: 50%
+	border: 3px solid #c7ac7c
+	margin: 0 auto
+	position: relative
+	background: #1c242a
+	margin-bottom: 27px
+	transform: translateY(-80px)
+	transition: all .4s linear
+	img 
+		position: absolute 
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+	@media (max-width: $md3)
+		transform: translateY(30px)
+		
+
+.items__column-title 
+	color: #fff
+	font-family: "PF Din Text Cond Pro"
+	font-size: 21px
+	font-weight: 500
+	text-transform: uppercase
+	letter-spacing: 2.1px
+	max-width: 181px
+	line-height: 1.1
+	text-align: center
+	margin: 0 auto
+	transform: translateY(150px)
+	transition: all .4s linear
+	@media (max-width: $md2)
+		font-size: 17px
+
+.items__column-column-icon-bottom 
+
+.items__column-two 
+
+.items__column-three 
+
+.items__unit--second 
+	margin: 0 30px
+	@media (max-width: $md2)
+		margin: 0 10px
+	@media (max-width: $md3)
+	 display: none
+
+.items__column-circle-wrapper
+	width: 12px
+	height: 250px
+	display: flex
+	margin-bottom: 50px
+	@media (max-width: $md2)
+		height: 200px
+
+.items__column-circle-item 
+	width: 10px
+	height: 10px
+	border-radius: 50%
+	background: #bb9c66
+	margin: auto 0
+	position: relative
+	&::before
+		content: ""
+		display: block 
+		width: 1px
+		height: 120px
+		background: #bb9c66
+		position: absolute
+		bottom: 15px
+		left: 5px
+	&::after
+		content: ""
+		display: block 
+		width: 1px
+		height: 120px
+		background: #bb9c66
+		position: absolute
+		top: 15px
+		left: 5px
+	@media (max-width: $md2)
+		&::before
+			height: 90px
+		&::after
+			height: 90px
+
+.items__unit--third 
+
+.items__column-four 
+
+.items__column-five 
+
+.items__column-six 
+
+.items__unit--fourth 
+	margin: 0 30px
+	@media (max-width: $md2)
+		margin: 0 10px
+	@media (max-width: $md3)
+		display: none
+
+.items__unit--fifth 
+	margin-left: auto
+	@media (max-width: $md3)
+		display: flex
+		flex-wrap: wrap
+
+.items__column-nine
+	@media (max-width: $md3)
+		margin: 0 auto 
+
+.items__bottom 
+	width: 100%
+	background: url(../img/items/icons/bg-text.png)no-repeat left center
+	padding: 10px 0 25px 130px
+	color: #333
+	font-family: "PT Sans"
+	font-size: 15px
+	line-height: 1.6
+	p 
+		margin-bottom: 40px
+	p:last-child
+		margin-bottom: 0
